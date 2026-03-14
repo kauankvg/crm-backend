@@ -1,4 +1,5 @@
 import { defineConfig } from 'drizzle-kit';
+import 'dotenv/config';
 
 export default defineConfig({
   schema: './src/db/schema.ts',
@@ -7,6 +8,6 @@ export default defineConfig({
   dbCredentials: {
     url:
       process.env.DATABASE_URL ||
-      'postgres://admin:admin@localhost:5434/crm_db',
+      'postgres://crm-pg:crm-pg@localhost:5434/crm-pg',
   },
 });

@@ -1,6 +1,21 @@
-<<<<<<< HEAD
+# Dependências (Nunca subir)
 node_modules/
-.env
+
+# Build e Saída (Gerados automaticamente)
 dist/
+artifacts/
 coverage/
-package-lock.json
+
+# Segredos e Configurações Locais (CRÍTICO)
+.env
+.env.local
+.env.development.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema (Lixo do Mac/Windows)
+.DS_Store
+Thumbs.db
